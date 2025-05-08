@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calm Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+  body {
+        margin: 0;
+        font-family: 'Outfit', sans-serif;
+        background: linear-gradient(to bottom right, #b89ee8, #d4c1f9);
+        color: #fff;
+        padding: 2rem;
+    }
+
+    .glass {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 16px;
+        padding: 2rem;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    h1, h2 {
+        font-weight: 300;
+    }
+
+    img {
+        max-width:70%;
+        height: auto;
+        border-radius: 12px;
+        margin: auto ;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+    }
+
+    th, td {
+        border: 1px solid #fff;
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    form {
+        margin-top: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        padding: 25px;
+    }
+
+    label {
+        display: block;
+        margin-top: 1rem;
+        font-weight: 400;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.3rem;
+        border-radius: 5px;
+        border: none;
+        font-family: inherit;
+    }
+
+    .group {
+        margin-top: 1rem;
+    }
+
+    .inventory input, .radioBtns input {
+        width: auto;
+        margin-right: 0.5rem;
+    }
+
+    button {
+        margin-top: 1.5rem;
+        padding: 0.7rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        background-color: #7e6acf;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #4e4679;
+    }
+    @media (max-width:600px) {
+    .container {
+        width: 95%;
+    }
+    img {
+        width: 40%;
+    }
+    
+    body {
+        font-size: .9em;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="glass">
+        <h1>Imagine a Place...</h1>
+        <p>A quiet space where the air is warm, the fire has a soft amber glow, and your thoughts are light.</p>
+
+
+        <div class="images" style="max-width: 260px; display: flex; gap: 10px;">
+            <img src="https://images.pexels.com/photos/4814043/pexels-photo-4814043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fabric from Pexels" title="Floral Snooze" />
+            
+            <img src="https://images.pexels.com/photos/7794360/pexels-photo-7794360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fabric from Pexels"  title="Cloudwhisper Blanket" />
+            <img src="https://images.pexels.com/photos/30399215/pexels-photo-30399215/free-photo-of-soft-green-fabric-texture-in-close-up-view.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fabric from Pexels" title="Willow Snugwool" />
+        </div>
+
+    
+
+        <h2>What you need</h2>
+        <ol>
+        <li> A soft blanket</li>
+        <li> Your favorite calming tea</li>
+        <li> Journal or sketchbook</li>
+        <li> A heart ready to unwind</li>
+        </ol>
+
+
+        <h2>Your New Best Friends</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>Sunset Street, Tokyo</td>
+                    <td>+123 456 7890</td>
+                    <td>doe@calmplace.org</td>
+                </tr>
+                <tr>
+                    <td>Ezra Vale</td>
+                    <td>Acacia Drive, Serengeti</td>
+                    <td>+198 765 4321</td>
+                    <td>ezra@calmplace.org</td>
+                </tr>
+                <tr>
+                <td>Nova Leigh</td>
+                <td>Glow Hill, Neverland</td>
+                <td>+112 233 4455</td>
+                <td>nova@calmplace.org</td>
+                </tr>
+                <tr>
+                <td>Sage Ember</td>
+                <td>Misty Path, Oz</td>
+                <td>+101 010 1010</td>
+                <td>sage@calmplace.org</td>
+                </tr>
+                <tr>
+                <td>Arlo Wynn</td>
+                <td>Violet Valley, Sagetown</td>
+                <td>+141 414 1414</td>
+                <td>arlowynn@calmplace.org</td>
+                </tr>
+        </tbody>
+        </table>
+
+
+        <h2>Join the Calm Movement</h2>
+        <p>Tell us what you need or we can walk you through what's right for you.</p>
+
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required> 
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required> 
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required minlength="6"> 
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required> 
+
+            
+            <label for="mood">What's your current vibe?</label>
+            <select id="mood" name="mood" required>
+                <option value="">I'm feeling...</option>
+                <option value="calm">Calm (✿◡‿◡)</option>
+                <option value="curious">Curious ∘ ∘ ∘  (｡·   ヮ    ·｡) ? </option>
+                <option value="tired">Tired ゜zｚＺ</option>
+                <option value="overwhelmed">Overwhelmed ヽ（≧□≦）ノ</option>
+            </select>
+
+
+            <div class="radioBtns">
+                <label>Preferred time for a chat:</label>
+                <label><input type="radio" name="time" value="morning" required> Morning</label>
+                <label><input type="radio" name="time" value="evening"> Evening</label>
+                <label><input type="radio" name="time" value="any"> Any time</label>
+                <label><input type="radio" name="time" value="none"> I know what I want</label>
+            </div>
+
+            <div class="inventory">
+                <label>What would you like?</label>
+                <label><input type="checkbox" name="fabric" value="1"> Floral Snooze</label>
+                <label><input type="checkbox" name="fabric" value="1"> Cloudwhisper Blanket</label>
+                <label><input type="checkbox" name="fabric" value="1"> Willow Snugwool</label>
+                <label><input type="checkbox" name="fabric" value="1"> I want to know about what else you offer</label>
+
+            </div>
+
+            <button type="submitRegister">Register</button>
+
+        </form>
+
+
+
+        <h3>Already a member?</h3>
+        <p>Sign in here</p>
+        <form>
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="name" placeholder="Your username/email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Type your password here" required minlength="6">
+            
+            <button type="submitLogin">Login</button> <span style="display:inline-block; width:50%;"></span>
+            <a href="#" style="text-decoration: none;color: white;">Forgot password?</a>
+
+            
+        </form>
+
+    </div>
+</body>
+</html>
